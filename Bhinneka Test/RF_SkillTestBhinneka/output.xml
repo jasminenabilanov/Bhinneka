@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.7 on darwin)" generated="20200729 10:27:49.491" rpa="false">
+<suite id="s1" name="E2EAddCart1TestCase" source="/Users/irwansyarifudin/Downloads/Bhinneka Test/RF_SkillTestBhinneka/TestCases/E2EAddCart1TestCase.robot">
+<test id="s1-t1" name="Login dengan data user yang sudah terdaftar">
+<kw name="Buka Website Bhinneka" library="E2EAddCart1">
+<arguments>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${link_verde}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200729 10:27:49.973" level="INFO">Opening browser 'chrome' to base url 'https://bhinneka.com'.</msg>
+<status status="PASS" starttime="20200729 10:27:49.972" endtime="20200729 10:27:56.509"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200729 10:27:56.510" endtime="20200729 10:27:56.784"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:27:49.972" endtime="20200729 10:27:56.785"></status>
+</kw>
+<kw name="Click button log in" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20200729 10:27:56.789" level="INFO">Clicking element 'xpath://a[@class='btn login-links']'.</msg>
+<status status="PASS" starttime="20200729 10:27:56.788" endtime="20200729 10:27:59.781"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:27:56.786" endtime="20200729 10:27:59.781"></status>
+</kw>
+<kw name="Masukkan Email" library="E2EAddCart1">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email_1}</arg>
+<arg>jasminenabilanov@gmail.com</arg>
+</arguments>
+<msg timestamp="20200729 10:27:59.789" level="INFO">Typing text 'jasminenabilanov@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200729 10:27:59.783" endtime="20200729 10:28:00.497"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:27:59.781" endtime="20200729 10:28:00.497"></status>
+</kw>
+<kw name="Click Button &quot;Selanjutnya&quot;" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_next}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:00.498" level="INFO">Clicking element 'id:next'.</msg>
+<status status="PASS" starttime="20200729 10:28:00.497" endtime="20200729 10:28:00.597"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:00.497" endtime="20200729 10:28:00.597"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:28:03.599" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:00.598" endtime="20200729 10:28:03.599"></status>
+</kw>
+<kw name="Masukkan Password" library="E2EAddCart1">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password_2}</arg>
+<arg>Gadoyanoyong123!@#</arg>
+</arguments>
+<msg timestamp="20200729 10:28:03.601" level="INFO">Typing text 'Gadoyanoyong123!@#' into text field 'css:#password'.</msg>
+<status status="PASS" starttime="20200729 10:28:03.600" endtime="20200729 10:28:04.095"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:03.600" endtime="20200729 10:28:04.095"></status>
+</kw>
+<kw name="Click Button Login 1" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login_2}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:04.097" level="INFO">Clicking element 'xpath://button[@class='ant-btn ant-btn-primary']'.</msg>
+<status status="PASS" starttime="20200729 10:28:04.097" endtime="20200729 10:28:04.185"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:04.095" endtime="20200729 10:28:04.185"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" starttime="20200729 10:27:49.970" endtime="20200729 10:28:04.187" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Tambah beberapa item belanja kedalam cart (multiple item)">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200729 10:28:09.195" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:04.194" endtime="20200729 10:28:09.195"></status>
+</kw>
+<kw name="click image product" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${imageprod}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:09.198" level="INFO">Clicking element 'xpath://*[@id="1294"]/div/div[4]/a/img'.</msg>
+<status status="PASS" starttime="20200729 10:28:09.198" endtime="20200729 10:28:11.117"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:09.197" endtime="20200729 10:28:11.118"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:28:13.120" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:11.118" endtime="20200729 10:28:13.120"></status>
+</kw>
+<kw name="click image otomotif" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${imageotomotif}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:13.122" level="INFO">Clicking element 'xpath://div[@id='catalogueProduct']//div[2]//a[1]//div[1]//div[1]//img[1]'.</msg>
+<status status="PASS" starttime="20200729 10:28:13.121" endtime="20200729 10:28:14.110"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:13.121" endtime="20200729 10:28:14.110"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:28:16.114" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:14.111" endtime="20200729 10:28:16.114"></status>
+</kw>
+<kw name="click icon cart" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icon_cart}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:16.116" level="INFO">Clicking element 'id:atc'.</msg>
+<status status="PASS" starttime="20200729 10:28:16.115" endtime="20200729 10:28:16.228"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:16.115" endtime="20200729 10:28:16.229"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:28:18.230" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:16.229" endtime="20200729 10:28:18.231"></status>
+</kw>
+<kw name="click button &quot;Kembali Belanja&quot;" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_kembali_belanja}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:18.233" level="INFO">Clicking element 'xpath://button[@class='btn btn-default']'.</msg>
+<status status="PASS" starttime="20200729 10:28:18.232" endtime="20200729 10:28:18.299"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:18.231" endtime="20200729 10:28:18.299"></status>
+</kw>
+<kw name="Ambil data qty cart" library="E2EAddCart1">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${badge_cart}</arg>
+</arguments>
+<assign>
+<var>${qty}</var>
+</assign>
+<msg timestamp="20200729 10:28:18.344" level="INFO">${qty} = 1</msg>
+<status status="PASS" starttime="20200729 10:28:18.301" endtime="20200729 10:28:18.344"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${qty}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:28:18.344" endtime="20200729 10:28:18.345"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:18.300" endtime="20200729 10:28:18.345"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200729 10:28:19.348" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200729 10:28:18.345" endtime="20200729 10:28:19.348"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:19.349" level="INFO">Opening url 'https://bhinneka.com'</msg>
+<status status="PASS" starttime="20200729 10:28:19.349" endtime="20200729 10:28:19.933"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:28:21.935" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:19.934" endtime="20200729 10:28:21.935"></status>
+</kw>
+<kw name="click barang tema software" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${software_home}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:21.937" level="INFO">Clicking element 'xpath://div[@id='1294']//div[5]//a[1]//img[1]'.</msg>
+<status status="PASS" starttime="20200729 10:28:21.936" endtime="20200729 10:28:22.707"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:21.936" endtime="20200729 10:28:22.708"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:28:24.712" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:22.708" endtime="20200729 10:28:24.712"></status>
+</kw>
+<kw name="click image product software" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${image_product_software}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:24.713" level="INFO">Clicking element 'xpath://div[@id='catalogueProduct']//div[2]//a[1]//div[1]//div[1]//img[1]'.</msg>
+<status status="PASS" starttime="20200729 10:28:24.713" endtime="20200729 10:28:25.831"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:24.712" endtime="20200729 10:28:25.831"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:28:27.834" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:25.832" endtime="20200729 10:28:27.834"></status>
+</kw>
+<kw name="click icon cart" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icon_cart}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:27.835" level="INFO">Clicking element 'id:atc'.</msg>
+<status status="PASS" starttime="20200729 10:28:27.835" endtime="20200729 10:28:27.952"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:27.835" endtime="20200729 10:28:27.953"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:28:29.956" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:27.954" endtime="20200729 10:28:29.956"></status>
+</kw>
+<kw name="click button &quot;go To cart&quot;" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${go_to_cart}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:29.958" level="INFO">Clicking element 'id:goToCart'.</msg>
+<status status="PASS" starttime="20200729 10:28:29.958" endtime="20200729 10:28:30.834"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:29.957" endtime="20200729 10:28:30.835"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:28:33.837" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:30.835" endtime="20200729 10:28:33.837"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20200729 10:28:33.839" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20200729 10:28:33.838" endtime="20200729 10:28:33.845"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:28:36.846" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:33.846" endtime="20200729 10:28:36.847"></status>
+</kw>
+<kw name="Total dan grandtotal sama" library="E2EAddCart1">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${total_pembelian}</arg>
+</arguments>
+<assign>
+<var>${totalpembelian}</var>
+</assign>
+<msg timestamp="20200729 10:28:36.874" level="INFO">${totalpembelian} = Rp 4.619.944</msg>
+<status status="PASS" starttime="20200729 10:28:36.848" endtime="20200729 10:28:36.874"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${total_pengiriman}</arg>
+</arguments>
+<assign>
+<var>${totalpengiriman}</var>
+</assign>
+<msg timestamp="20200729 10:28:36.898" level="INFO">${totalpengiriman} = Rp. 0</msg>
+<status status="PASS" starttime="20200729 10:28:36.874" endtime="20200729 10:28:36.898"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${totalpembelian}</arg>
+</arguments>
+<assign>
+<var>${totalpembelian_convert}</var>
+</assign>
+<msg timestamp="20200729 10:28:36.899" level="FAIL">'Rp 4.619.944' cannot be converted to a floating point number: ValueError: could not convert string to float: 'Rp 4.619.944'</msg>
+<status status="FAIL" starttime="20200729 10:28:36.898" endtime="20200729 10:28:36.899"></status>
+</kw>
+<status status="FAIL" starttime="20200729 10:28:36.848" endtime="20200729 10:28:36.899"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="FAIL" starttime="20200729 10:28:04.191" endtime="20200729 10:28:36.899" critical="yes">'Rp 4.619.944' cannot be converted to a floating point number: ValueError: could not convert string to float: 'Rp 4.619.944'</status>
+</test>
+<test id="s1-t3" name="Tambah 1 item product dari trigger Search dan tambahkan ke cart">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:36.901" level="INFO">Opening url 'https://bhinneka.com'</msg>
+<status status="PASS" starttime="20200729 10:28:36.901" endtime="20200729 10:28:37.741"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200729 10:28:38.744" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200729 10:28:37.742" endtime="20200729 10:28:38.744"></status>
+</kw>
+<kw name="Cari Produk" library="E2EAddCart1">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${search}</arg>
+<arg>Laptop</arg>
+</arguments>
+<msg timestamp="20200729 10:28:38.746" level="INFO">Typing text 'Laptop' into text field 'xpath://div[@class='row main-menu-merchant']//input[@placeholder='Cari produk asli...']'.</msg>
+<status status="PASS" starttime="20200729 10:28:38.745" endtime="20200729 10:28:38.911"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>Deprecated use `Press Keys` instead.</doc>
+<arguments>
+<arg>${search}</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:28:38.911" endtime="20200729 10:28:38.948"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:38.745" endtime="20200729 10:28:38.949"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200729 10:28:39.950" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200729 10:28:38.949" endtime="20200729 10:28:39.950"></status>
+</kw>
+<kw name="Ambil data query title barang" library="E2EAddCart1">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${label_title}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200729 10:28:40.187" level="INFO">${result} = </msg>
+<status status="PASS" starttime="20200729 10:28:39.951" endtime="20200729 10:28:40.188"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${result}'=='LAPTOP'</arg>
+<arg>Log</arg>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:28:40.189" endtime="20200729 10:28:40.189"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:39.951" endtime="20200729 10:28:40.190"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:28:43.194" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:40.190" endtime="20200729 10:28:43.194"></status>
+</kw>
+<kw name="click image laptop" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${imagelaptop}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:43.197" level="INFO">Clicking element 'xpath://*[@id="catalogueProduct"]/div[3]/a/div[2]/p[2]'.</msg>
+<status status="PASS" starttime="20200729 10:28:43.196" endtime="20200729 10:28:43.948"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:43.194" endtime="20200729 10:28:43.948"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200729 10:28:44.950" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200729 10:28:43.948" endtime="20200729 10:28:44.950"></status>
+</kw>
+<kw name="click icon cart" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icon_cart}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:44.951" level="INFO">Clicking element 'id:atc'.</msg>
+<status status="PASS" starttime="20200729 10:28:44.951" endtime="20200729 10:28:45.065"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:44.951" endtime="20200729 10:28:45.066"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:28:48.067" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:45.066" endtime="20200729 10:28:48.068"></status>
+</kw>
+<kw name="click button &quot;go To cart&quot;" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${go_to_cart}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:48.069" level="INFO">Clicking element 'id:goToCart'.</msg>
+<status status="PASS" starttime="20200729 10:28:48.069" endtime="20200729 10:28:48.834"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:48.068" endtime="20200729 10:28:48.834"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:28:51.837" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:48.834" endtime="20200729 10:28:51.838"></status>
+</kw>
+<kw name="Ambil data total barang di halaman shopping cart" library="E2EAddCart1">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${span_title_total_barang}</arg>
+</arguments>
+<assign>
+<var>${span_title}</var>
+</assign>
+<msg timestamp="20200729 10:28:51.866" level="INFO">${span_title} = Total (3) Barang</msg>
+<status status="PASS" starttime="20200729 10:28:51.839" endtime="20200729 10:28:51.866"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${span_title}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:28:51.867" endtime="20200729 10:28:51.867"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:51.838" endtime="20200729 10:28:51.867"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" starttime="20200729 10:28:36.900" endtime="20200729 10:28:51.868" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Add CoupunCode valid">
+<kw name="Click icon navbar cart" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${navbar_icon}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:51.870" level="INFO">Clicking element 'xpath://div[@class='navbar-cart']//a'.</msg>
+<status status="PASS" starttime="20200729 10:28:51.870" endtime="20200729 10:28:52.635"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:28:51.869" endtime="20200729 10:28:52.635"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:28:55.637" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:52.636" endtime="20200729 10:28:55.638"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_1}</arg>
+</arguments>
+<msg timestamp="20200729 10:28:55.639" level="INFO">Opening url 'https://bhinneka.com/cart'</msg>
+<status status="PASS" starttime="20200729 10:28:55.638" endtime="20200729 10:28:58.241"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:29:00.244" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:28:58.242" endtime="20200729 10:29:00.244"></status>
+</kw>
+<kw name="Isi coupun code" library="E2EAddCart1">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${couponcode}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:00.246" endtime="20200729 10:29:00.278"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>${couponcode}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:00.278" endtime="20200729 10:29:00.300"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${couponcode}</arg>
+<arg>BCAPAYDAYVA</arg>
+</arguments>
+<msg timestamp="20200729 10:29:00.301" level="INFO">Typing text 'BCAPAYDAYVA' into text field 'id:ecoupon'.</msg>
+<status status="PASS" starttime="20200729 10:29:00.301" endtime="20200729 10:29:00.529"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:29:00.245" endtime="20200729 10:29:00.529"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200729 10:29:01.530" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200729 10:29:00.530" endtime="20200729 10:29:01.531"></status>
+</kw>
+<kw name="click button submit coupon code" library="E2EAddCart1">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${btn_submit_couponcode}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:01.533" endtime="20200729 10:29:01.575"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>${btn_submit_couponcode}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:01.575" endtime="20200729 10:29:01.598"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_submit_couponcode}</arg>
+</arguments>
+<msg timestamp="20200729 10:29:01.598" level="INFO">Clicking element 'xpath://button[@class='btn btn-warning submit-ecoupon']'.</msg>
+<status status="PASS" starttime="20200729 10:29:01.598" endtime="20200729 10:29:01.695"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:29:01.532" endtime="20200729 10:29:01.696"></status>
+</kw>
+<kw name="Ambil data ecooupun" library="E2EAddCart1">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${coupun_valid}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:01.699" endtime="20200729 10:29:01.752"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>${coupun_valid}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:01.753" endtime="20200729 10:29:01.788"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${coupun_valid}</arg>
+</arguments>
+<assign>
+<var>${coupun}</var>
+</assign>
+<msg timestamp="20200729 10:29:01.834" level="INFO">${coupun} = </msg>
+<status status="PASS" starttime="20200729 10:29:01.789" endtime="20200729 10:29:01.834"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${coupun}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:01.834" endtime="20200729 10:29:01.835"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:29:01.697" endtime="20200729 10:29:01.835"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200729 10:29:06.837" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200729 10:29:01.836" endtime="20200729 10:29:06.837"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" starttime="20200729 10:28:51.868" endtime="20200729 10:29:06.838" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Add CoupunCode invalid">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20200729 10:29:06.841" level="INFO">Opening url 'https://bhinneka.com'</msg>
+<status status="PASS" starttime="20200729 10:29:06.841" endtime="20200729 10:29:07.621"></status>
+</kw>
+<kw name="Click icon navbar cart" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${navbar_icon}</arg>
+</arguments>
+<msg timestamp="20200729 10:29:07.622" level="INFO">Clicking element 'xpath://div[@class='navbar-cart']//a'.</msg>
+<status status="PASS" starttime="20200729 10:29:07.622" endtime="20200729 10:29:08.553"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:29:07.621" endtime="20200729 10:29:08.553"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:29:11.556" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:29:08.554" endtime="20200729 10:29:11.556"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_1}</arg>
+</arguments>
+<msg timestamp="20200729 10:29:11.556" level="INFO">Opening url 'https://bhinneka.com/cart'</msg>
+<status status="PASS" starttime="20200729 10:29:11.556" endtime="20200729 10:29:12.191"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:29:14.195" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:29:12.193" endtime="20200729 10:29:14.195"></status>
+</kw>
+<kw name="click delete couponcode" library="E2EAddCart1">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${delete_coupun}</arg>
+</arguments>
+<msg timestamp="20200729 10:29:14.197" level="INFO">Clicking element 'id:flushecoup'.</msg>
+<status status="PASS" starttime="20200729 10:29:14.196" endtime="20200729 10:29:14.286"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:29:14.195" endtime="20200729 10:29:14.286"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200729 10:29:17.288" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200729 10:29:14.286" endtime="20200729 10:29:17.288"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url_1}</arg>
+</arguments>
+<msg timestamp="20200729 10:29:17.289" level="INFO">Opening url 'https://bhinneka.com/cart'</msg>
+<status status="PASS" starttime="20200729 10:29:17.289" endtime="20200729 10:29:17.946"></status>
+</kw>
+<kw name="click button submit coupon code" library="E2EAddCart1">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${btn_submit_couponcode}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:17.949" endtime="20200729 10:29:18.852"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>${btn_submit_couponcode}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:18.852" endtime="20200729 10:29:18.873"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_submit_couponcode}</arg>
+</arguments>
+<msg timestamp="20200729 10:29:18.874" level="INFO">Clicking element 'xpath://button[@class='btn btn-warning submit-ecoupon']'.</msg>
+<status status="PASS" starttime="20200729 10:29:18.873" endtime="20200729 10:29:18.973"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:29:17.947" endtime="20200729 10:29:18.973"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200729 10:29:20.976" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200729 10:29:18.974" endtime="20200729 10:29:20.977"></status>
+</kw>
+<kw name="Alert warning kosong" library="E2EAddCart1">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${warning_kupon_null}</arg>
+</arguments>
+<assign>
+<var>${null_kupon}</var>
+</assign>
+<msg timestamp="20200729 10:29:21.007" level="INFO">${null_kupon} = eCoupon tidak Valid</msg>
+<status status="PASS" starttime="20200729 10:29:20.978" endtime="20200729 10:29:21.007"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${null_kupon}</arg>
+</arguments>
+<status status="PASS" starttime="20200729 10:29:21.007" endtime="20200729 10:29:21.008"></status>
+</kw>
+<status status="PASS" starttime="20200729 10:29:20.977" endtime="20200729 10:29:21.008"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200729 10:29:21.009" endtime="20200729 10:29:21.278"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" starttime="20200729 10:29:06.840" endtime="20200729 10:29:21.280" critical="yes"></status>
+</test>
+<status status="FAIL" starttime="20200729 10:27:49.495" endtime="20200729 10:29:21.283"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1">Critical Tests</stat>
+<stat pass="4" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="1">regression</stat>
+</tag>
+<suite>
+<stat pass="4" fail="1" id="s1" name="E2EAddCart1TestCase">E2EAddCart1TestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
